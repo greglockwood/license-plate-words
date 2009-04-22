@@ -1,0 +1,9 @@
+<h1>Solutions</h1>
+<% if !@solutions.blank? %>
+  <% for solution in @solutions %>
+    <p><%= link_to solution, solution_path(solution) %></p>
+  <% end %>
+<% else %>
+  No solutions yet.
+<% end %>
+<p><%= link_to "&laquo; Back to start page", {:controller => 'home'} %>

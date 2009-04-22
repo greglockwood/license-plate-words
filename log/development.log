@@ -263,3 +263,1359 @@ Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/rails/info/propert
 Processing HomeController#index (for 127.0.0.1 at 2009-04-20 13:55:11) [GET]
 Rendering home/index
 Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-21 14:02:06) [GET]
+Rendering home/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-21 14:02:53) [GET]
+
+ActionController::RoutingError (No route matches "/colutions" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:02:57) [GET]
+Rendering solutions/index
+
+ActionView::TemplateError (Expected c:/ruby/git/plates/app/models/solutions.rb to define Solutions) on line #2 of app/views/solutions/index.html.erb:
+1: <<h1>Solutions</h1>
+2: <% if !Solutions.blank? %>
+3:   <% for solution in Solutions %>
+4:     <p><% solution.title %></p>
+5:   <% end %>
+
+    app/views/solutions/index.html.erb:2
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:06:47) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/models/solution.rb:3: odd number list for Hash
+c:/ruby/git/plates/app/models/solution.rb:6: syntax error, unexpected '{', expecting '\n' or ';'
+c:/ruby/git/plates/app/models/solution.rb:8: syntax error, unexpected '}', expecting kEND):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:07:24) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/models/solution.rb:3: odd number list for Hash
+c:/ruby/git/plates/app/models/solution.rb:6: syntax error, unexpected '{', expecting '\n' or ';'
+c:/ruby/git/plates/app/models/solution.rb:8: syntax error, unexpected '}', expecting kEND):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-21 14:07:45) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-21 14:08:10) [GET]
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-21 14:08:15) [GET]
+  Parameters: {"id"=>"index"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:08:23) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/models/solution.rb:3: odd number list for Hash
+c:/ruby/git/plates/app/models/solution.rb:6: syntax error, unexpected '{', expecting '\n' or ';'
+c:/ruby/git/plates/app/models/solution.rb:8: syntax error, unexpected '}', expecting kEND):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:09:13) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/models/solution.rb:3: odd number list for Hash
+c:/ruby/git/plates/app/models/solution.rb:6: syntax error, unexpected '{', expecting '\n' or ';'
+c:/ruby/git/plates/app/models/solution.rb:8: syntax error, unexpected '}', expecting kEND):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:09:43) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/models/solution.rb:3: odd number list for Hash
+c:/ruby/git/plates/app/models/solution.rb:6: syntax error, unexpected '{', expecting '\n' or ';'
+c:/ruby/git/plates/app/models/solution.rb:8: syntax error, unexpected '}', expecting kEND):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:09:51) [GET]
+  [4;36;1mSolution Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: solutions: SELECT * FROM "solutions" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: solutions: SELECT * FROM "solutions" ):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:14:35) [GET]
+  [4;35;1mSolution Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: solutions: SELECT * FROM "solutions" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: solutions: SELECT * FROM "solutions" ):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (188.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:14:42) [GET]
+
+NoMethodError (undefined method `solutions' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-21 14:16:21) [GET]
+  Parameters: {"id"=>"index"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:16:24) [GET]
+
+NoMethodError (undefined method `solutions' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (516.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:16:52) [GET]
+
+NoMethodError (undefined method `solutions' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:17:01) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (218.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:17:12) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:17:42) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:19:07) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:19:52) [GET]
+
+NoMethodError (undefined method `index' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:19:59) [GET]
+
+NoMethodError (undefined method `index' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:20:45) [GET]
+
+NoMethodError (undefined method `solutions' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:21:46) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `solutions' for Solutions(Table doesn't exist):Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:23:52) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:24:04) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:24:21) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:24:22) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:24:23) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:24:35) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:24:42) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (406.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:25:36) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:25:52) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:25:53) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-21 14:25:58) [GET]
+  Parameters: {"id"=>"index"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 14:35:40) [GET]
+
+NoMethodError (undefined method `list' for Solutions:Class):
+  app/controllers/solutions_controller.rb:3:in `index'
+
+Rendered rescues/_trace (344.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 16:52:29) [GET]
+Rendering solutions/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-21 16:52:52) [GET]
+Rendering solutions/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:15:05) [GET]
+Rendering home/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-22 19:15:35) [GET]
+
+NoMethodError (undefined method `add' for #<Solutions:0x35757f8 @solutions=[]>):
+  app/controllers/solutions_controller.rb:11:in `initialize'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:18:18) [GET]
+Rendering solutions/index
+
+ActionView::TemplateError (undefined method `title' for #<Solution:0x3900e7c>) on line #4 of app/views/solutions/index.html.erb:
+1: <h1>Solutions</h1>
+2: <% if !@solutions.blank? %>
+3:   <% for solution in @solutions %>
+4:     <p><%=h solution.title %></p>
+5:   <% end %>
+6: <% else %>
+7:   No solutions yet.
+
+    app/views/solutions/index.html.erb:4
+    app/views/solutions/index.html.erb:3:in `each'
+    app/views/solutions/index.html.erb:3
+    app/controllers/solutions_controller.rb:16:in `index'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:19:32) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:19:37) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:24:24) [GET]
+Rendering home/index
+ERROR: compiling _run_erb_app47views47home47index46html46erb RAISED compile error
+c:/ruby/git/plates/app/views/home/index.html.erb:5: syntax error, unexpected '{', expecting kEND
+ link_to 'Solutions?' { :controller => 'solutions', :action => :index } ; @output_buffer
+                       ^
+c:/ruby/git/plates/app/views/home/index.html.erb:5: syntax error, unexpected ',', expecting kEND
+ link_to 'Solutions?' { :controller => 'solutions', :action => :index } ; @output_buffer
+                                                   ^
+Function body:           def _run_erb_app47views47home47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>License Plate Word Finder</h1>\n"
+@output_buffer.concat "<p>More coming soon...</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ link_to 'Solutions?' { :controller => 'solutions', :action => :index } ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/ruby/git/plates/app/views/home/index.html.erb:8:in `compile!'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/ruby/git/plates/app/views/home/index.html.erb:5: syntax error, unexpected '{', expecting kEND
+ link_to 'Solutions?' { :controller => 'solutions', :action => :index } ; @output_buffer
+                       ^
+c:/ruby/git/plates/app/views/home/index.html.erb:5: syntax error, unexpected ',', expecting kEND
+ link_to 'Solutions?' { :controller => 'solutions', :action => :index } ; @output_buffer
+                                                   ^) on line #5 of app/views/home/index.html.erb:
+2: <p>More coming soon...</p>
+3: 
+4: 
+5: <% link_to 'Solutions?' { :controller => 'solutions', :action => :index } %>
+
+    app/views/home/index.html.erb:8:in `compile!'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:24:37) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:27:04) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:27:11) [GET]
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:28:11) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:28:46) [GET]
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:29:08) [GET]
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:29:09) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:29:10) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:29:10) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:29:10) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:29:21) [GET]
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:29:23) [GET]
+Rendering solutions/index
+
+ActionView::TemplateError (undefined method `title' for #<Solution:0x37f26c0>) on line #4 of app/views/solutions/index.html.erb:
+1: <h1>Solutions</h1>
+2: <% if !@solutions.blank? %>
+3:   <% for solution in @solutions %>
+4:     <p><%=h solution.title %></p>
+5:   <% end %>
+6: <% else %>
+7:   No solutions yet.
+
+    app/views/solutions/index.html.erb:4
+    app/views/solutions/index.html.erb:3:in `each'
+    app/views/solutions/index.html.erb:3
+    app/controllers/solutions_controller.rb:16:in `index'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:29:58) [GET]
+Rendering solutions/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:30:32) [GET]
+Rendering solutions/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:31:15) [GET]
+Rendering solutions/index
+
+ActionView::TemplateError (undefined local variable or method `home_path' for #<ActionView::Base:0x36f905c>) on line #9 of app/views/solutions/index.html.erb:
+6: <% else %>
+7:   No solutions yet.
+8: <% end %>
+9: <p><%= link_to "&laquo; Back to start page", home_path %>
+
+    app/views/solutions/index.html.erb:9
+    app/controllers/solutions_controller.rb:16:in `index'
+
+Rendered rescues/_trace (344.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:32:15) [GET]
+Rendering solutions/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 19:32:17) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:32:19) [GET]
+Rendering solutions/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-22 19:38:50) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/models/solution.rb:18: syntax error, unexpected $end, expecting kEND):
+  app/models/solutions.rb:7:in `push'
+  app/controllers/solutions_controller.rb:11:in `initialize'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-22 19:39:47) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/models/solution.rb:18: syntax error, unexpected $end, expecting kEND):
+  app/models/solutions.rb:7:in `push'
+  app/controllers/solutions_controller.rb:11:in `initialize'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:40:01) [GET]
+Rendering solutions/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:40:46) [GET]
+Rendering solutions/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:40:49) [GET]
+  Parameters: {"id"=>"Simple"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:43:46) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:23:in `show'
+
+Rendered rescues/_trace (281.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:44:42) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/solutions_controller.rb:23:in `show'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:44:56) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/solutions_controller.rb:23:in `show'
+
+Rendered rescues/_trace (360.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:45:08) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (undefined method `title' for #<Solution:0x38eb360>):
+  app/models/solutions.rb:20:in `[]'
+  app/models/solutions.rb:20:in `each'
+  app/models/solutions.rb:20:in `find'
+  app/models/solutions.rb:20:in `[]'
+  app/controllers/solutions_controller.rb:23:in `show'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:45:48) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:23:in `show'
+
+Rendered rescues/_trace (343.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:46:10) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:23:in `show'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:46:57) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:23:in `show'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:48:53) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:49:03) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:50:25) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (265.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:51:22) [GET]
+  Parameters: {"id"=>"Simple"}
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:52:06) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (328.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:52:28) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NameError (uninitialized constant SolutionsController::RAILSROOT):
+  app/controllers/solutions_controller.rb:6:in `initialize'
+  app/models/solution.rb:39:in `call'
+  app/models/solution.rb:39:in `run'
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-04-22 19:53:54) [GET]
+  Parameters: {"id"=>"Simple"}
+
+SyntaxError (c:/ruby/git/plates/app/controllers/solutions_controller.rb:24: unknown regexp options - lt):
+  
+
+Rendered rescues/_trace (359.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:54:52) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/solutions/show.html.erb:
+2: <p><%=h @description %></p>
+3: <p>Word list:
+4: 	<ul>
+5: 	<% for word in @words_list %>
+6: 		<li><%=h word %></li>
+7: 	<% end %>
+8: </ul></p>
+
+    app/views/solutions/show.html.erb:5
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:55:17) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/solutions/show.html.erb:
+2: <p><%=h @description %></p>
+3: <p>Word list:
+4: 	<ul>
+5: 	<% for word in @words_list %>
+6: 		<li><%=h word %></li>
+7: 	<% end %>
+8: </ul></p>
+
+    app/views/solutions/show.html.erb:5
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:55:19) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/solutions/show.html.erb:
+2: <p><%=h @description %></p>
+3: <p>Word list:
+4: 	<ul>
+5: 	<% for word in @words_list %>
+6: 		<li><%=h word %></li>
+7: 	<% end %>
+8: </ul></p>
+
+    app/views/solutions/show.html.erb:5
+
+Rendered rescues/_trace (469.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:55:20) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/solutions/show.html.erb:
+2: <p><%=h @description %></p>
+3: <p>Word list:
+4: 	<ul>
+5: 	<% for word in @words_list %>
+6: 		<li><%=h word %></li>
+7: 	<% end %>
+8: </ul></p>
+
+    app/views/solutions/show.html.erb:5
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:55:26) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/solutions/show.html.erb:
+2: <p><%=h @description %></p>
+3: <p>Word list:
+4: 	<ul>
+5: 	<% for word in @words_list %>
+6: 		<li><%=h word %></li>
+7: 	<% end %>
+8: </ul></p>
+
+    app/views/solutions/show.html.erb:5
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:55:30) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/solutions/show.html.erb:
+2: <p><%=h @description %></p>
+3: <p>Word list:
+4: 	<ul>
+5: 	<% for word in @words_list %>
+6: 		<li><%=h word %></li>
+7: 	<% end %>
+8: </ul></p>
+
+    app/views/solutions/show.html.erb:5
+
+Rendered rescues/_trace (391.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:56:19) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+ERROR: compiling _run_erb_app47views47solutions47show46html46erb RAISED compile error
+c:/ruby/git/plates/app/views/solutions/show.html.erb:5: syntax error, unexpected kUNLESS_MOD, expecting kDO_COND or ':' or '\n' or ';'
+@output_buffer.concat "\t";  for word in @words_list unless @words_list.blank? ; @output_buffer.concat "\n"
+                                                           ^
+c:/ruby/git/plates/app/views/solutions/show.html.erb:12: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47solutions47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>"; @output_buffer.concat((h @title ).to_s); @output_buffer.concat "</h1>\n"
+@output_buffer.concat "<p>"; @output_buffer.concat((h @description ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "<p>Word list:\n"
+@output_buffer.concat "\t<ul>\n"
+@output_buffer.concat "\t";  for word in @words_list unless @words_list.blank? ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<li>"; @output_buffer.concat((h word ).to_s); @output_buffer.concat "</li>\n"
+@output_buffer.concat "\t";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</ul></p>\n"
+@output_buffer.concat "<hr />\n"
+@output_buffer.concat(( link_to "&laquo; Back to solutions index", solutions_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/ruby/git/plates/app/views/solutions/show.html.erb:12:in `compile!'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/ruby/git/plates/app/views/solutions/show.html.erb:5: syntax error, unexpected kUNLESS_MOD, expecting kDO_COND or ':' or '\n' or ';'
+@output_buffer.concat "\t";  for word in @words_list unless @words_list.blank? ; @output_buffer.concat "\n"
+                                                           ^
+c:/ruby/git/plates/app/views/solutions/show.html.erb:12: syntax error, unexpected kENSURE, expecting $end) on line #5 of app/views/solutions/show.html.erb:
+2: <p><%=h @description %></p>
+3: <p>Word list:
+4: 	<ul>
+5: 	<% for word in @words_list unless @words_list.blank? %>
+6: 		<li><%=h word %></li>
+7: 	<% end %>
+8: </ul></p>
+
+    app/views/solutions/show.html.erb:12:in `compile!'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:56:57) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:58:25) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NameError (undefined local variable or method `solution' for #<SolutionsController:0x2da01b8>):
+  app/controllers/solutions_controller.rb:25:in `show'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:58:42) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 19:58:47) [GET]
+Rendering solutions/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:58:49) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:58:59) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NameError (uninitialized constant SolutionsController::RAILSROOT):
+  app/controllers/solutions_controller.rb:6:in `initialize'
+  app/models/solution.rb:39:in `call'
+  app/models/solution.rb:39:in `run'
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:59:22) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (undefined method `call' for #<Solution:0x3875994>):
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 19:59:47) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NameError (uninitialized constant SolutionsController::RAILSROOT):
+  app/controllers/solutions_controller.rb:6:in `initialize'
+  app/models/solution.rb:39:in `call'
+  app/models/solution.rb:39:in `run'
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:01:49) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 828ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 20:01:52) [GET]
+Rendering solutions/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:01:53) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 609ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:02:26) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 1016ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:02:40) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 610ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:03:14) [GET]
+  Parameters: {"id"=>"Simple"}
+
+ThreadError (return can't jump across threads):
+  app/controllers/solutions_controller.rb:9:in `initialize'
+  app/models/solution.rb:39:in `call'
+  app/models/solution.rb:39:in `run'
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:03:25) [GET]
+  Parameters: {"id"=>"Simple"}
+
+ThreadError (return can't jump across threads):
+  app/controllers/solutions_controller.rb:9:in `initialize'
+  app/models/solution.rb:39:in `call'
+  app/models/solution.rb:39:in `run'
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:04:35) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 688ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:05:01) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:05:02) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:05:15) [GET]
+  Parameters: {"id"=>"Simple"}
+
+ThreadError (return can't jump across threads):
+  app/controllers/solutions_controller.rb:9:in `initialize'
+  app/models/solution.rb:39:in `call'
+  app/models/solution.rb:39:in `run'
+  app/controllers/solutions_controller.rb:24:in `show'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-04-22 20:05:31) [GET]
+  Parameters: {"id"=>"Simple"}
+
+ArgumentError (tried to create Proc object without a block):
+  app/controllers/solutions_controller.rb:4:in `lambda'
+  app/controllers/solutions_controller.rb:4:in `initialize'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:05:39) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:06:03) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:07:46) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:07:47) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:07:48) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:09:23) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/solutions/show.html.erb:
+3: <% unless @solution.words_list.blank? %>
+4: <p>Word list:
+5: 	<ul>
+6: 	<% for word in @words_list %>
+7: 		<li><%=h word %></li>
+8: 	<% end %>
+9: </ul></p>
+
+    app/views/solutions/show.html.erb:6
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:09:49) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/solutions/Simple]

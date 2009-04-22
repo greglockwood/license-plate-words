@@ -1,0 +1,11 @@
+<h1><%=h @title %></h1>
+<p><%=h @description %></p>
+<p>Word list:
+	<ul>
+	<% for word in @words_list unless @words_list.blank? %>
+		<li><%=h word %></li>
+	<% end %>
+</ul></p>
+<hr />
+<%= link_to "&laquo; Back to solutions index", solutions_path %>
+	
