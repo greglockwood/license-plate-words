@@ -1619,3 +1619,360 @@ Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:09:49) [GET]
   Parameters: {"id"=>"Simple"}
 Rendering solutions/show
 Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:11:09) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 1844ms (View: 1562, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-22 20:11:33) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 20:11:34) [GET]
+Rendering solutions/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:11:35) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 1937ms (View: 1422, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:11:50) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 531ms (View: 16, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:12:27) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 1890ms (View: 1344, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:12:36) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 1187ms (View: 16, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:13:00) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (undefined method `trim' for "\e\n":String):
+  app/controllers/solutions_controller.rb:7:in `initialize'
+  app/controllers/solutions_controller.rb:6:in `foreach'
+  app/controllers/solutions_controller.rb:6:in `initialize'
+  app/models/solution.rb:39:in `call'
+  app/models/solution.rb:39:in `run'
+  app/controllers/solutions_controller.rb:25:in `show'
+
+Rendered rescues/_trace (390.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:15:37) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 969ms (View: 140, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:17:37) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 2844ms (View: 1312, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:17:52) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 2438ms (View: 219, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:21:21) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 2141ms (View: 172, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:21:35) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 671ms (View: 125, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:21:52) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 609ms (View: 140, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:21:55) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 860ms (View: 141, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:25:18) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 704ms (View: 125, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:25:32) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 687ms (View: 125, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:26:14) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 782ms (View: 141, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:27:02) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+
+ActionView::TemplateError (malformed format string - %h) on line #3 of app/views/solutions/show.html.erb:
+1: <h1><%=h @solution.title %></h1>
+2: <p><%=h @solution.description %></p>
+3: <p>Started running at: <%=h "%hh:mm:ss tt" % @solution.start_time %><br />
+4:    Ended running at: <%=h @solution.end_time %><br />
+5:    Total duration: <%=h ("%05f" % @solution.duration.seconds) %> seconds</p>
+6: <% unless @solution.words_list.blank? %>
+
+    app/views/solutions/show.html.erb:3:in `%'
+    app/views/solutions/show.html.erb:3
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:28:28) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 750ms (View: 140, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:29:45) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 703ms (View: 125, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:30:11) [GET]
+  Parameters: {"id"=>"Simple"}
+Rendering solutions/show
+Completed in 2125ms (View: 1531, DB: 0) | 200 OK [http://localhost/solutions/Simple]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:40:02) [GET]
+  Parameters: {"id"=>"Simple"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.run):
+  app/controllers/solutions_controller.rb:36:in `show'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-22 20:40:16) [GET]
+Rendering solutions/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:40:18) [GET]
+  Parameters: {"id"=>"Brute Force"}
+
+NameError (undefined local variable or method `word' for #<SolutionsController:0x440e760>):
+  app/controllers/solutions_controller.rb:15:in `initialize'
+  app/controllers/solutions_controller.rb:12:in `foreach'
+  app/controllers/solutions_controller.rb:12:in `initialize'
+  app/controllers/solutions_controller.rb:9:in `foreach'
+  app/controllers/solutions_controller.rb:9:in `initialize'
+  app/controllers/solutions_controller.rb:6:in `foreach'
+  app/controllers/solutions_controller.rb:6:in `initialize'
+  app/models/solution.rb:47:in `call'
+  app/models/solution.rb:47:in `run'
+  app/controllers/solutions_controller.rb:36:in `show'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-22 20:43:27) [GET]
+  Parameters: {"id"=>"Brute Force"}
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-23 08:46:39) [GET]
+Rendering template within layouts/application
+Rendering solutions/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-23 08:46:41) [GET]
+  Parameters: {"id"=>"Brute Force"}
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-23 08:51:05) [GET]
+Rendering template within layouts/application
+Rendering solutions/index
+
+ActionView::TemplateError (undefined method `name' for :controller:Symbol) on line #7 of app/views/layouts/application.html.erb:
+4: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+5: <head>
+6:   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+7:   <title>License Plate Word Finder: <%= :controller.name %></title>
+8: </head>
+9: <body>
+10: 
+
+    app/views/layouts/application.html.erb:7
+    app/controllers/solutions_controller.rb:33:in `index'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-23 08:51:38) [GET]
+Rendering template within layouts/application
+Rendering solutions/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-23 08:51:41) [GET]
+  Parameters: {"id"=>"Brute Force"}
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-23 08:58:03) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-23 08:58:05) [GET]
+Rendering template within layouts/application
+Rendering solutions/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-23 08:58:06) [GET]
+  Parameters: {"id"=>"Brute Force"}
+Rendering template within layouts/application
+Rendering solutions/show
+Completed in 687ms (View: 125, DB: 0) | 200 OK [http://localhost/solutions/Brute%20Force]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-23 08:58:40) [GET]
+  Parameters: {"id"=>"Brute Force"}
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-23 09:16:17) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-23 09:16:18) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/controllers/solutions_controller.rb:27: syntax error, unexpected '}', expecting kEND
+c:/ruby/git/plates/app/controllers/solutions_controller.rb:45: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-23 09:17:51) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/controllers/solutions_controller.rb:27: syntax error, unexpected '}', expecting kEND
+c:/ruby/git/plates/app/controllers/solutions_controller.rb:45: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-23 09:19:04) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/controllers/solutions_controller.rb:45: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-23 09:19:52) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/controllers/solutions_controller.rb:45: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-23 09:20:35) [GET]
+
+SyntaxError (c:/ruby/git/plates/app/controllers/solutions_controller.rb:27: syntax error, unexpected '}', expecting kEND
+c:/ruby/git/plates/app/controllers/solutions_controller.rb:45: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#index (for 127.0.0.1 at 2009-04-23 09:20:45) [GET]
+Rendering template within layouts/application
+Rendering solutions/index
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://localhost/solutions]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-23 09:20:48) [GET]
+  Parameters: {"id"=>"Brute Force"}
+Rendering template within layouts/application
+Rendering solutions/show
+Completed in 922ms (View: 15, DB: 0) | 200 OK [http://localhost/solutions/Brute%20Force]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-04-23 09:21:06) [GET]
+  Parameters: {"id"=>"Brute Force"}
+
+SyntaxError (c:/ruby/git/plates/app/controllers/solutions_controller.rb:27: syntax error, unexpected '}', expecting kEND
+c:/ruby/git/plates/app/controllers/solutions_controller.rb:45: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-23 09:21:15) [GET]
+  Parameters: {"id"=>"Brute Force"}
+Rendering template within layouts/application
+Rendering solutions/show
+Completed in 1016ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Brute%20Force]
+
+
+Processing SolutionsController#show (for 127.0.0.1 at 2009-04-23 09:21:43) [GET]
+  Parameters: {"id"=>"Brute Force"}
+Rendering template within layouts/application
+Rendering solutions/show
+Completed in 719ms (View: 0, DB: 0) | 200 OK [http://localhost/solutions/Brute%20Force]

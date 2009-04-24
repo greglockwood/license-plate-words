@@ -1,5 +1,8 @@
 <h1><%=h @solution.title %></h1>
 <p><%=h @solution.description %></p>
+<p>Started running at: <%=h @solution.start_time.strftime("%I:%M:%S%p") %><br />
+   Ended running at: <%=h @solution.end_time.strftime("%I:%M:%S%p") %><br />
+   Total duration: <%=h ("%05f" % @solution.duration.seconds) %> seconds</p>
 <% unless @solution.words_list.blank? %>
 <p>Word list:
 	<ul>

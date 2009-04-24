@@ -25,17 +25,27 @@ class Solution
 	def words_list
 		@words_list
 	end
+			
+	def start_time
+		@start_time
+	end
 	
-	def show
-		@start_time = DateTime.now
-		@word_list = run
-	end 
-		
+	def end_time
+		@end_time
+	end
+	
+	def duration
+		@duration
+	end
+	
 	def to_s
 		@title
 	end
 	
 	def run
+		@start_time = DateTime.now
 		@words_list = @generate_func.call
+		@end_time = DateTime.now
+		@duration = @end_time - @start_time
 	end
 end

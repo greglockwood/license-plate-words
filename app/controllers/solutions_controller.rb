@@ -1,15 +1,35 @@
 class SolutionsController < ApplicationController
 	def initialize
 		@solutionsModel = Solutions.new
-		simple = lambda { 
+		
+		# BRUTE FORCE
+		brute_force = lambda {
 			words_list = Array.new
-			#IO.foreach(RAILS_ROOT + '/dict/D8.dic') { |word| 
-			#	words_list.push(word) # unless word.length != 3 
-			#}
-			words_list.push('Test')
+			plain_words = Array.new
+			l_words = Array.new
+			IO.foreach(RAILS_ROOT + '/dict/D8.dic') do |plain_word| 
+				plain_word.chop!
+				if /^[a-z]{3}$/i.match(plain_word):
+					plain_words.push(plain_word)
+				end
+			end
+			if plain_words.blank? do
+				plain_words.each do |word|
+					IO.foreach(RAILS_ROOT + '/dict/D8.dic') do |l_word| 
+						l_word.chop!
+						if 'l' + word == l_word:
+							words_list.push(word)
+						end
+					end
+				end
+			end
+
 			return words_list
+		end
 		}
-		@solutionsModel.push('Simple', 'First test', simple)
+		@solutionsModel.push('Brute Force', 'Awful, brute force algorithm with O(n^3) complexity, I think.', brute_force)
+		
+		# other methods pending
 	end
 	
 	def index
